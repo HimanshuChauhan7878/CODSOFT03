@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Belanosima&display=swap");
+body{
+    .text-center{
+        text-align: center;
+    }
+    
+    .mx-auto{
+        margin: auto;
+    }
+    
+    .flex{
+        display: flex;
+    }
+    
+    .flex-col{
+        flex-direction: column;
+    }
+    
+    .items-center{
+        align-items: center;
+    }
+}
+
+:root {
+  --primary-color: #e3f9ff;
+  --secondary-color: rgb(29, 108, 160);
+}
+
+
+body {
+  height: 100%;
+  font-family: "Belanosima", sans-serif;
+  background-color: var(--primary-color);
+}
+
+#logo {
+  margin-left: 30px;
+  margin-top: 10px;
+  width: 200px;
+  height: 100px;
+  cursor: pointer;
+}
+
+.historyHeadline {
+  text-align: center;
+}
+
+.clearHistory {
+  cursor: pointer;
+}
+
+.button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 0.8rem;
+  margin: 0.3rem;
+  box-shadow: 2px 5px 20px #080404;
+  background: transparent;
+  font-size: 20px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.button.arithmetic {
+  background: #24d2a9;
+  font-size: 17px;
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+  .cal-outer-body {
+    width: 350px;
+  }
+}
+
+.input {
+  height: 100%;
+  width: 100%;
+}
+
+.button:active {
+  background-color: black;
+  color: #81eded;
+}
+
+.button:hover {
+  background-color: #000000;
+  opacity: 0.7;
+}
+
+.row {
+  margin: 8px 0;
+}
+
+.row input {
+  width: 225px;
+  font-size: 20px;
+  margin: 0;
+  padding: 10px 38px;
+  border: none;
+  border-radius: 5px;
+}
+
+.cal-outer-body {
+  display: block;
+  margin: 0 auto;
+  width: 400px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  background: var(--secondary-color);
+  border-radius: 10px;
+  color: #fff;
+}
+
+.cal-inner-body {
+  padding: 10px;
+}
+
+.shake {
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
